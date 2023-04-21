@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+enum { ROWS = 24, COLS = 80 , NUMOFBREADCRUMBS = 7, ESC = 27};
 void gotoxy(int x, int y);
 //void setTextColor(Color);
 void hideCursor();
