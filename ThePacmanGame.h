@@ -1,14 +1,10 @@
-#ifndef _THEPacmanGAME_H_
-#define _THEPacmanGAME_H_
+#pragma once
 
 #include "io_utils.h"
 #include "Pacman.h"
 #include "Ghost.h"
 
-enum { ROWS = 24, COLS = 80 , NUMOFBREADCRUMBS = 7};
-
 class ThePacmanGame {
-	enum { ESC = 27 };
 	int score = 0;
 	int lives = 3;
 	Pacman p;
@@ -34,5 +30,3 @@ public:
 	void resetLocations();
 	void run(); // run 2 Snakes with Keyboard
 };
-
-#endif
